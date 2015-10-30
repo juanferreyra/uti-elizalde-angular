@@ -16,8 +16,11 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial',
+    'ngMaterial'
   ])
+  .controller('barra', function($scope){
+
+  })
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -33,8 +36,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  })
-
-.controller('barra', function($scope){
-
-});
+  });

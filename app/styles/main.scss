@@ -2,92 +2,51 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+.fabSpeedDialOptions .md-fab-top-left {
+  top: 16px;
 }
 
-body {
-  padding: 0;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+@media only screen and (max-device-width: 600px) {
+  .fabSpeedDialOptions .md-fab-top-left {
+    top: 9px;
+    right: 9px;
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.fabSpeedDialOptions .md-fab.demo-fab.trigger-fab:hover,
+.fabSpeedDialOptions .md-fab.demo-fab.trigger-fab.md-focused,
+.fabSpeedDialOptions .md-fab.demo-fab.action-fab:hover,
+.fabSpeedDialOptions .md-fab.demo-fab.action-fab.md-focused {
+  background-color: #333;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+.fabSpeedDialOptions .md-fab.demo-fab.action-fab {
+  background-color: #aaa;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
+.fabSpeedDialOptions md-content div[flex="50"] {
+  padding: 15px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
+.fabSpeedDialOptions md-fab-speed-dial {
+  margin-top: 50px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.fabSpeedDialOptions md-fab-speed-dial md-fab-trigger {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
 }
-.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
-  color: white;
+
+.fabSpeedDialOptions md-fab-speed-dial.md-scale.ng-hide,
+.fabSpeedDialOptions md-fab-speed-dial.md-fling.ng-hide {
+  display: flex !important;
+}
+
+.fabSpeedDialOptions md-fab-speed-dial.md-scale.ng-hide md-fab-trigger,
+.fabSpeedDialOptions md-fab-speed-dial.md-fling.ng-hide md-fab-trigger {
+  transform: scale(0);
+}
+
+.fabSpeedDialOptions .intro {
+  padding-left: 5px;
 }
